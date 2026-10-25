@@ -1,0 +1,522 @@
+{
+  "status": "Optimal",
+  "objective": 730.0,
+  "net_profit": 730.0,
+  "total_revenue": 790.0,
+  "total_expansion_cost": 60.0,
+  "total_installation_cost": 0,
+  "accepted_demands": [
+    0,
+    2,
+    3,
+    4,
+    6
+  ],
+  "rejected_demands": [
+    1,
+    5,
+    7
+  ],
+  "paths": {
+    "0": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "B",
+        "E"
+      ],
+      [
+        "E",
+        "G"
+      ]
+    ],
+    "2": [
+      [
+        "B",
+        "D"
+      ],
+      [
+        "D",
+        "G"
+      ]
+    ],
+    "3": [
+      [
+        "A",
+        "C"
+      ],
+      [
+        "C",
+        "F"
+      ]
+    ],
+    "4": [
+      [
+        "C",
+        "D"
+      ],
+      [
+        "D",
+        "G"
+      ]
+    ],
+    "6": [
+      [
+        "C",
+        "D"
+      ],
+      [
+        "D",
+        "E"
+      ]
+    ]
+  },
+  "paths_used": {
+    "0": [
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "E"
+          ],
+          [
+            "E",
+            "G"
+          ]
+        ],
+        "flow_fraction": 1.0,
+        "flow_amount": 40.0,
+        "bandwidth": 40.0
+      }
+    ],
+    "2": [
+      {
+        "path": [
+          [
+            "B",
+            "D"
+          ],
+          [
+            "D",
+            "G"
+          ]
+        ],
+        "flow_fraction": 1.0,
+        "flow_amount": 30.0,
+        "bandwidth": 30.0
+      }
+    ],
+    "3": [
+      {
+        "path": [
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "F"
+          ]
+        ],
+        "flow_fraction": 1.0,
+        "flow_amount": 45.0,
+        "bandwidth": 45.0
+      }
+    ],
+    "4": [
+      {
+        "path": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "G"
+          ]
+        ],
+        "flow_fraction": 0.4,
+        "flow_amount": 10.0,
+        "bandwidth": 10.0
+      },
+      {
+        "path": [
+          [
+            "C",
+            "F"
+          ],
+          [
+            "F",
+            "G"
+          ]
+        ],
+        "flow_fraction": 0.4,
+        "flow_amount": 10.0,
+        "bandwidth": 10.0
+      },
+      {
+        "path": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ],
+          [
+            "E",
+            "G"
+          ]
+        ],
+        "flow_fraction": 0.2,
+        "flow_amount": 5.0,
+        "bandwidth": 5.0
+      }
+    ],
+    "6": [
+      {
+        "path": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ]
+        ],
+        "flow_fraction": 1.0,
+        "flow_amount": 20.0,
+        "bandwidth": 20.0
+      }
+    ]
+  },
+  "capacity_expansions": {
+    "A->C": {
+      "expansion": 5.0,
+      "init_capacity": 40.0,
+      "new_capacity": 45.0,
+      "expansion_cost": 60.0,
+      "installation_cost": 0,
+      "cost": 60.0
+    }
+  },
+  "installed_edges": [],
+  "edge_utilization": {
+    "A->B": {
+      "flow": 40.0,
+      "capacity": 50.0,
+      "init_capacity": 50.0,
+      "expansion": 0.0,
+      "utilization": 80.0
+    },
+    "A->C": {
+      "flow": 45.0,
+      "capacity": 45.0,
+      "init_capacity": 40.0,
+      "expansion": 5.0,
+      "utilization": 100.0
+    },
+    "B->D": {
+      "flow": 30.0,
+      "capacity": 30.0,
+      "init_capacity": 30.0,
+      "expansion": 0.0,
+      "utilization": 100.0
+    },
+    "B->E": {
+      "flow": 40.0,
+      "capacity": 45.0,
+      "init_capacity": 45.0,
+      "expansion": 0.0,
+      "utilization": 88.88888888888889
+    },
+    "C->D": {
+      "flow": 35.0,
+      "capacity": 35.0,
+      "init_capacity": 35.0,
+      "expansion": 0.0,
+      "utilization": 100.0
+    },
+    "C->F": {
+      "flow": 55.0,
+      "capacity": 55.0,
+      "init_capacity": 55.0,
+      "expansion": 0.0,
+      "utilization": 100.0
+    },
+    "D->E": {
+      "flow": 25.0,
+      "capacity": 25.0,
+      "init_capacity": 25.0,
+      "expansion": 0.0,
+      "utilization": 100.0
+    },
+    "D->G": {
+      "flow": 40.0,
+      "capacity": 40.0,
+      "init_capacity": 40.0,
+      "expansion": 0.0,
+      "utilization": 100.0
+    },
+    "E->G": {
+      "flow": 45.0,
+      "capacity": 60.0,
+      "init_capacity": 60.0,
+      "expansion": 0.0,
+      "utilization": 75.0
+    },
+    "F->G": {
+      "flow": 10.0,
+      "capacity": 50.0,
+      "init_capacity": 50.0,
+      "expansion": 0.0,
+      "utilization": 20.0
+    }
+  },
+  "all_paths": {
+    "0": [
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "D"
+          ],
+          [
+            "D",
+            "G"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "G"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "E"
+          ],
+          [
+            "E",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "1": [
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "E"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "2": [
+      {
+        "path": [
+          [
+            "B",
+            "D"
+          ],
+          [
+            "D",
+            "G"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "B",
+            "E"
+          ],
+          [
+            "E",
+            "G"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "B",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ],
+          [
+            "E",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "3": [
+      {
+        "path": [
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "F"
+          ]
+        ]
+      }
+    ],
+    "4": [
+      {
+        "path": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "G"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "C",
+            "F"
+          ],
+          [
+            "F",
+            "G"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ],
+          [
+            "E",
+            "G"
+          ]
+        ]
+      }
+    ],
+    "5": [],
+    "6": [
+      {
+        "path": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "7": [
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "D"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ]
+        ]
+      }
+    ]
+  },
+  "total_cost": 60.0
+}

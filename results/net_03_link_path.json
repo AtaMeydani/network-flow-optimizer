@@ -1,0 +1,230 @@
+{
+  "status": "Optimal",
+  "objective": 300.0,
+  "total_revenue": 300.0,
+  "accepted_demands": [
+    0
+  ],
+  "rejected_demands": [
+    1,
+    2
+  ],
+  "all_paths": {
+    "0": [
+      [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "D"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ],
+      [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ],
+      [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ]
+    ],
+    "1": [
+      [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "D"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ],
+      [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ],
+      [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ]
+    ],
+    "2": [
+      [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "D"
+        ]
+      ],
+      [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ]
+    ]
+  },
+  "paths_used": {
+    "0": [
+      {
+        "path": [
+          [
+            "A",
+            "C"
+          ],
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "F"
+          ]
+        ],
+        "flow_fraction": 0.5,
+        "flow_amount": 15.0,
+        "bandwidth": 15.0
+      },
+      {
+        "path": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "E"
+          ],
+          [
+            "E",
+            "F"
+          ]
+        ],
+        "flow_fraction": 0.5,
+        "flow_amount": 15.0,
+        "bandwidth": 15.0
+      }
+    ]
+  },
+  "paths": {
+    "0": [
+      [
+        "A",
+        "C"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "D",
+        "F"
+      ]
+    ]
+  },
+  "flow_distribution": {
+    "0": {
+      "1": 0.5,
+      "2": 0.5
+    }
+  },
+  "edge_utilization": {
+    "A->B": {
+      "flow": 15.0,
+      "capacity": 20.0,
+      "utilization": 75.0
+    },
+    "A->C": {
+      "flow": 15.0,
+      "capacity": 20.0,
+      "utilization": 75.0
+    },
+    "B->D": {
+      "flow": 0.0,
+      "capacity": 15.0,
+      "utilization": 0.0
+    },
+    "C->D": {
+      "flow": 15.0,
+      "capacity": 15.0,
+      "utilization": 100.0
+    },
+    "B->E": {
+      "flow": 15.0,
+      "capacity": 15.0,
+      "utilization": 100.0
+    },
+    "C->E": {
+      "flow": 0.0,
+      "capacity": 15.0,
+      "utilization": 0.0
+    },
+    "D->F": {
+      "flow": 15.0,
+      "capacity": 25.0,
+      "utilization": 60.0
+    },
+    "E->F": {
+      "flow": 15.0,
+      "capacity": 25.0,
+      "utilization": 60.0
+    }
+  }
+}

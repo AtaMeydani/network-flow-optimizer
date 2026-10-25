@@ -1,0 +1,168 @@
+{
+  "status": "Optimal",
+  "objective": 49.0,
+  "net_profit": 49.0,
+  "total_revenue": 70.0,
+  "total_expansion_cost": 11.0,
+  "total_installation_cost": 10.0,
+  "accepted_demands": [
+    0,
+    1
+  ],
+  "rejected_demands": [],
+  "paths": {
+    "0": [
+      [
+        "S",
+        "A"
+      ],
+      [
+        "A",
+        "T"
+      ]
+    ],
+    "1": [
+      [
+        "S",
+        "T"
+      ]
+    ]
+  },
+  "paths_used": {
+    "0": [
+      {
+        "path": [
+          [
+            "S",
+            "T"
+          ]
+        ],
+        "flow_fraction": 0.33333333,
+        "flow_amount": 0.99999999,
+        "bandwidth": 0.99999999
+      },
+      {
+        "path": [
+          [
+            "S",
+            "A"
+          ],
+          [
+            "A",
+            "T"
+          ]
+        ],
+        "flow_fraction": 0.66666667,
+        "flow_amount": 2.00000001,
+        "bandwidth": 2.00000001
+      }
+    ],
+    "1": [
+      {
+        "path": [
+          [
+            "S",
+            "T"
+          ]
+        ],
+        "flow_fraction": 1.0,
+        "flow_amount": 2.0,
+        "bandwidth": 2.0
+      }
+    ]
+  },
+  "capacity_expansions": {
+    "S->A": {
+      "expansion": 1.0,
+      "init_capacity": 1.0,
+      "new_capacity": 2.0,
+      "expansion_cost": 2.0,
+      "installation_cost": 0,
+      "cost": 2.0
+    },
+    "S->T": {
+      "expansion": 3.0,
+      "init_capacity": 0,
+      "new_capacity": 3.0,
+      "expansion_cost": 9.0,
+      "installation_cost": 10.0,
+      "cost": 19.0
+    }
+  },
+  "installed_edges": [
+    [
+      "S",
+      "T"
+    ]
+  ],
+  "edge_utilization": {
+    "S->A": {
+      "flow": 2.00000001,
+      "capacity": 2.0,
+      "init_capacity": 1.0,
+      "expansion": 1.0,
+      "utilization": 100.0000005
+    },
+    "A->T": {
+      "flow": 2.00000001,
+      "capacity": 2.0,
+      "init_capacity": 2.0,
+      "expansion": 0.0,
+      "utilization": 100.0000005
+    },
+    "S->T": {
+      "flow": 2.99999999,
+      "capacity": 3.0,
+      "init_capacity": 0,
+      "expansion": 3.0,
+      "utilization": 99.99999966666667
+    }
+  },
+  "all_paths": {
+    "0": [
+      {
+        "path": [
+          [
+            "S",
+            "T"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "S",
+            "A"
+          ],
+          [
+            "A",
+            "T"
+          ]
+        ]
+      }
+    ],
+    "1": [
+      {
+        "path": [
+          [
+            "S",
+            "T"
+          ]
+        ]
+      },
+      {
+        "path": [
+          [
+            "S",
+            "A"
+          ],
+          [
+            "A",
+            "T"
+          ]
+        ]
+      }
+    ]
+  },
+  "total_cost": 21.0
+}

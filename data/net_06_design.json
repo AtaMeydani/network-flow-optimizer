@@ -1,0 +1,16 @@
+{
+  "nodes": ["S", "A", "T"],
+  "edges": [["S", "A"], ["A", "T"]],
+  "capacities": {"S->A": 1, "A->T": 2},
+  "capacity_expansion": {
+    "S->A": {"init_capacity": 1, "max_capacity": 4, "expansion_cost": 2}
+  },
+  "candidate_edges": {
+    "S->T": {"max_capacity": 5, "expansion_cost": 3, "installation_cost": 10}
+  },
+  "demands": [
+    {"source": "S", "target": "T", "bandwidth": 3, "revenue": 40},
+    {"source": "S", "target": "T", "bandwidth": 2, "revenue": 30}
+  ],
+  "node_positions": {"S": [0, 0], "A": [1, 1], "T": [2, 0]}
+}

@@ -1,0 +1,114 @@
+{
+    "nodes": [
+        "S1",
+        "S2",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "D1",
+        "D2"
+    ],
+    "edges": [
+        [
+            "S1",
+            "R1"
+        ],
+        [
+            "S1",
+            "R2"
+        ],
+        [
+            "S2",
+            "R2"
+        ],
+        [
+            "S2",
+            "R3"
+        ],
+        [
+            "R1",
+            "R3"
+        ],
+        [
+            "R1",
+            "R4"
+        ],
+        [
+            "R2",
+            "R3"
+        ],
+        [
+            "R2",
+            "R4"
+        ],
+        [
+            "R3",
+            "D1"
+        ],
+        [
+            "R3",
+            "D2"
+        ],
+        [
+            "R4",
+            "D1"
+        ],
+        [
+            "R4",
+            "D2"
+        ]
+    ],
+    "capacities": {
+        "S1->R1": 20,
+        "S1->R2": 25,
+        "S2->R2": 30,
+        "S2->R3": 20,
+        "R1->R3": 15,
+        "R1->R4": 20,
+        "R2->R3": 25,
+        "R2->R4": 20,
+        "R3->D1": 30,
+        "R3->D2": 25,
+        "R4->D1": 20,
+        "R4->D2": 30
+    },
+    "demands": [
+        {
+            "source": "S1",
+            "target": "D1",
+            "bandwidth": 10,
+            "revenue": 150
+        },
+        {
+            "source": "S1",
+            "target": "D2",
+            "bandwidth": 8,
+            "revenue": 120
+        },
+        {
+            "source": "S2",
+            "target": "D1",
+            "bandwidth": 12,
+            "revenue": 180
+        },
+        {
+            "source": "S2",
+            "target": "D2",
+            "bandwidth": 15,
+            "revenue": 200
+        },
+        {
+            "source": "S1",
+            "target": "D1",
+            "bandwidth": 5,
+            "revenue": 80
+        },
+        {
+            "source": "S2",
+            "target": "D2",
+            "bandwidth": 7,
+            "revenue": 100
+        }
+    ]
+}

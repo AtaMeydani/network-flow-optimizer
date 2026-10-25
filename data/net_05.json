@@ -1,0 +1,138 @@
+{
+  "nodes": ["A", "B", "C", "D", "E", "F", "G"],
+  "edges": [
+    ["A", "B"],
+    ["A", "C"],
+    ["B", "D"],
+    ["B", "E"],
+    ["C", "D"],
+    ["C", "F"],
+    ["D", "E"],
+    ["D", "G"],
+    ["E", "G"],
+    ["F", "G"]
+  ],
+  "capacities": {
+    "A->B": 50,
+    "A->C": 40,
+    "B->D": 30,
+    "B->E": 45,
+    "C->D": 35,
+    "C->F": 55,
+    "D->E": 25,
+    "D->G": 40,
+    "E->G": 60,
+    "F->G": 50
+  },
+  "capacity_expansion": {
+    "A->B": {
+      "init_capacity": 50,
+      "max_capacity": 100,
+      "expansion_cost": 10
+    },
+    "A->C": {
+      "init_capacity": 40,
+      "max_capacity": 80,
+      "expansion_cost": 12
+    },
+    "B->D": {
+      "init_capacity": 30,
+      "max_capacity": 60,
+      "expansion_cost": 8
+    },
+    "B->E": {
+      "init_capacity": 45,
+      "max_capacity": 90,
+      "expansion_cost": 15
+    },
+    "C->D": {
+      "init_capacity": 35,
+      "max_capacity": 70,
+      "expansion_cost": 11
+    },
+    "C->F": {
+      "init_capacity": 55,
+      "max_capacity": 110,
+      "expansion_cost": 13
+    },
+    "D->E": {
+      "init_capacity": 25,
+      "max_capacity": 50,
+      "expansion_cost": 9
+    },
+    "D->G": {
+      "init_capacity": 40,
+      "max_capacity": 80,
+      "expansion_cost": 10
+    },
+    "E->G": {
+      "init_capacity": 60,
+      "max_capacity": 120,
+      "expansion_cost": 14
+    },
+    "F->G": {
+      "init_capacity": 50,
+      "max_capacity": 100,
+      "expansion_cost": 12
+    }
+  },
+  "demands": [
+    {
+      "source": "A",
+      "target": "G",
+      "bandwidth": 40,
+      "revenue": 200
+    },
+    {
+      "source": "A",
+      "target": "E",
+      "bandwidth": 35,
+      "revenue": 180
+    },
+    {
+      "source": "B",
+      "target": "G",
+      "bandwidth": 30,
+      "revenue": 150
+    },
+    {
+      "source": "A",
+      "target": "F",
+      "bandwidth": 45,
+      "revenue": 220
+    },
+    {
+      "source": "C",
+      "target": "G",
+      "bandwidth": 25,
+      "revenue": 120
+    },
+    {
+      "source": "B",
+      "target": "F",
+      "bandwidth": 50,
+      "revenue": 250
+    },
+    {
+      "source": "C",
+      "target": "E",
+      "bandwidth": 20,
+      "revenue": 100
+    },
+    {
+      "source": "A",
+      "target": "D",
+      "bandwidth": 30,
+      "revenue": 140
+    }
+  ],
+  "node_positions": {
+    "A": [0, 1],
+    "B": [1, 2],
+    "C": [1, 0],
+    "D": [2, 1.5],
+    "E": [2, 0.5],
+    "F": [2, -0.5],
+    "G": [3, 1]
+  }
+}

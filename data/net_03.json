@@ -1,0 +1,74 @@
+{
+    "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+    ],
+    "edges": [
+        [
+            "A",
+            "B"
+        ],
+        [
+            "A",
+            "C"
+        ],
+        [
+            "B",
+            "D"
+        ],
+        [
+            "C",
+            "D"
+        ],
+        [
+            "B",
+            "E"
+        ],
+        [
+            "C",
+            "E"
+        ],
+        [
+            "D",
+            "F"
+        ],
+        [
+            "E",
+            "F"
+        ]
+    ],
+    "capacities": {
+        "A->B": 20,
+        "A->C": 20,
+        "B->D": 15,
+        "C->D": 15,
+        "B->E": 15,
+        "C->E": 15,
+        "D->F": 25,
+        "E->F": 25
+    },
+    "demands": [
+        {
+            "source": "A",
+            "target": "F",
+            "bandwidth": 30,
+            "revenue": 300
+        },
+        {
+            "source": "A",
+            "target": "F",
+            "bandwidth": 20,
+            "revenue": 200
+        },
+        {
+            "source": "A",
+            "target": "D",
+            "bandwidth": 10,
+            "revenue": 80
+        }
+    ]
+}
